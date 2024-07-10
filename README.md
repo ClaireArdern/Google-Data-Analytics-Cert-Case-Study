@@ -3,7 +3,7 @@
 
 <h2>Business Task</h2>
 
-Focus on one of Bellabeat’s products and analyze smart device data to gain insight into how customers are using their smart devices.
+Analyze smart device data to gain insight into how customers are using their smart devices.
 
 **Problem Statement:** How can the trends found in the smart device usage data be utilized to improve the BellaBeat marketing strategy? 
 
