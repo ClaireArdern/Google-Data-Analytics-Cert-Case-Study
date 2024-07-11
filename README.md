@@ -21,7 +21,7 @@ This Kaggle data set contains personal fitness tracker data from thirty fitbit u
 
 <h3>Dataset Overview</h3>
 
-This dataset is split into 2 time periods: 3/12/16 - 4/11/16 and 4/12/16 - 5/12/16. Initially, due to the mismatched number of files corresponding to each time period, it seems that the second time period includes more information than the first time period. However, this mismatched number of data files is mostly due to duplicate information represented in different formats (e.g. minute by minute rather than day by day). For this study, data that is summarized day by day will be sufficient.  
+This dataset is split into 2 time periods: 3/12/16 - 4/11/16 and 4/12/16 - 5/12/16. Initially, due to the mismatched number of files corresponding to each time period, it seems that the second time period includes more information than the first time period. However, this mismatched number of data files is mostly due to duplicate information represented in different formats (e.g. minute by minute rather than day by day). For this study, as we are simply observing usage trends, data that is summarized day by day will be sufficient.  
 
 <h2>Data Cleaning and Manipulation</h2>
 
