@@ -1,4 +1,4 @@
-<h1> Google Data Analytics Certification Capstone: Case Study </h1>
+<h1> Google Data Analytics Certification Capstone: Case Study - In Progress </h1>
 <h6> The following includes documentation of all work done in the process of completing the capstone project for the Google Data Analytics Certification. This capstone project is a data analytics case study. </h6>
 
 <h2>Scenario</h2>
@@ -18,3 +18,15 @@ The dataset used in this case study was provided by the Google Data Analytics Ce
 This Kaggle data set contains personal fitness tracker data from thirty fitbit users. It includes information about daily activity, steps, and heart rate that can be used to explore users’ habits.
 
 [FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit)
+
+<h3>Dataset Overview</h3>
+
+This dataset is split into 2 time periods: 3/12/16 - 4/11/16 and 4/12/16 - 5/12/16. Initially, due to the mismatched number of files corresponding to each time period, it seems that the second time period includes more information than the first time period. However, this mismatched number of data files is mostly due to duplicate information represented in different formats (e.g. minute by minute rather than day by day). For this study, data that is summarized day by day will be sufficient.  
+
+<h2>Data Cleaning</h2>
+
+<h2>Data Analysis</h2>
+
+<h2>Data Visualizations</h2>
+
+<h2>Results and Insights</h2>
