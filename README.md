@@ -1,4 +1,4 @@
-<h1> Google Data Analytics Certification Capstone: Case Study - In Progress </h1>
+<h1> Google Data Analytics Certification Capstone: Case Study</h1>
 <h6> The following includes documentation of all work done in the process of completing the capstone project for the Google Data Analytics Certification. This capstone project is a data analytics case study. </h6>
 
 <h2>Scenario</h2>
@@ -21,9 +21,33 @@ This Kaggle data set contains personal fitness tracker data from thirty fitbit u
 
 <h3>Dataset Overview</h3>
 
-This dataset is split into 2 time periods: 3/12/16 - 4/11/16 and 4/12/16 - 5/12/16. Initially, due to the mismatched number of files corresponding to each time period, it seems that the second time period includes more information than the first time period. However, this mismatched number of data files is mostly due to duplicate information represented in different formats (e.g. minute by minute rather than day by day). For this study, as we are simply observing usage trends, data that is summarized day by day will be sufficient.  
+This dataset is split into 2 time periods: 3/12/16 - 4/11/16 and 4/12/16 - 5/12/16. Initially, due to the mismatched number of files corresponding to each time period, it seems that the second time period includes more information than the first time period. However, this mismatched number of data files is mostly due to duplicate information represented in different formats (e.g. minute by minute rather than day by day). For this study, as we are simply observing usage trends, data that is summarized daily will be sufficient. 
+
+There are 35 distinct IDs included in the first time period (March 2016 - April 2016) and 33 distinct IDs included in the second time period (April 2016 - May 2016). It seems that two of the users (IDs 2891001357 and 6391747486) are only included in the first time period, not the second. Although there is an inqual number of users between the two time periods, as we are simply observing behavior, this disparity should not affect our results.
+
+It should also be noted that there is an overlap of one day (04-12-16) between the two time periods. As there are two users that are unaccounted for in the second period, it is better to use the records corresponding to this date from the first time period. Once we can confirm that the records for this day are the same across both of the time periods (excluding the 2 missing users in the second time period), we can remove this record from the second time period to ensure that the data corresponding to this day is not accounted for twice due to this overlap. 
+
+In order to complete the analysis for each time period using data represented in the daily format rather than hourly or by minute, we will need the following files: 
+
+- From the March 2016 - April 2016 time period:
+    - dailyActivity_merged
+    - heartrate_seconds_merged (to be converted to daily format)
+    - minuteMETsNarrow_merged (to be converted to daily format)
+    - minuteSleep_merged (to be converted to daily format)
+    - weightLogInfo_merged
+
+- From the April 2016 - May 2016 time period:
+    - dailyActivity_merged
+    - heartrate_seconds_merged (to be converted to daily format)
+    - minuteMETsNarrow_merged (to be converted to daily format)
+    - SleepDay_merged
+    - weightLogInfo_merged
+ 
+More detailed documentation of the logic behind the initial exploration of the dataset can be seen in the following file: 
 
 <h2>Data Cleaning and Manipulation</h2>
+
+In Progress
 
 <h2>Summary of Data Analysis</h2>
 
