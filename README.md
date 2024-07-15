@@ -43,7 +43,7 @@ In order to complete the analysis for each time period using data represented in
     - SleepDay_merged
     - weightLogInfo_merged
  
-More detailed documentation of the logic behind the initial exploration of the dataset can be seen in the following file: 
+More detailed documentation of the logic behind the initial exploration of the dataset can be seen in the following file:   [Initial Data Exploration](https://github.com/ClaireArdern/Google-Data-Analytics-Cert-Case-Study/blob/main/InitialDataExploration.pdf)
 
 <h2>Data Cleaning and Manipulation</h2>
 
