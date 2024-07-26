@@ -45,7 +45,38 @@ In order to complete the analysis for each time period using data represented in
 
 <h2>Data Cleaning and Manipulation</h2>
 
-In Progress
+In order to simplify the titles of the data files and ensure proper organization, each of the files used were given new names when uploaded to BigQuery for cleaning. These changes are listed in the tables below.
+
+For the first (March 2016 - April 2016) time period:
+
+| Original Title  | Updated Title |
+| ------------- | ------------- |
+| dailyActivity_merged  | dailyActivity_P1 |
+| heartrate_seconds_merged  | heartrate_seconds_P1  |
+| minuteMETsNarrow_merged | minuteMETs_P1 |
+| minuteSleep_merged | minuteSleep_P1 |
+| weightLogInfo_merged | weightLogInfo_P1 |
+
+For the second (April 2016 - May 2016) time period:
+
+
+| Original Title  | Updated Title |
+| ------------- | ------------- |
+| dailyActivity_merged  | dailyActivity_P2 |
+| heartrate_seconds_merged  | heartrate_seconds_P2  |
+| minuteMETsNarrow_merged | minuteMETs_P2 |
+| SleepDay_merged | SleepDay_P2 |
+| weightLogInfo_merged | weightLogInfo_P2 |
+
+As the included data files were often not logged in the desired daily format, the first task at hand was to correct this in order to ensure proper analysis. The tasks included in this process are as follows:
+
+- Update heartrate_seconds_P1 and heartrate_seconds_P2 to be in the correct date/time format for future operations. Previously, the Time column in these tables was set as a String since the AM/PM format was not supported. After this change, the Time column in these tables is formatted in UTC. 
+- Using a nested query, first split the date and time columns in heartrate_seconds_P1 and heartrate_seconds_P2 to be two separate columns: Date and Time. Next, average the daily heart rate for each individual user (Id). This is saved into a separate table for each time period, creating a new heartrate_daily_P1 and heartrate_daily_P2. These new tables each include columns Id, Date, Value. 
+    - NOTE: For future queries using the Date column, we should first cast the Date column as Date. This is necessary because we cannot change the datatype of a column in BigQuery.
+- Same process as above used for minuteMETs_P1 and minuteMETs_P2 to create METs_Daily_P1 and METs_Daily_P2.
+- Update minuteSleep_P1 to match SleepDay_P2. The total number of minutes (records) that had a Value of 1 were counted as TotalMinutesAsleep. The total number of minutes per Id and logId were counted as TotalTimeInBed. The TotalMinutesAsleep and TotalTimeInBed were summed for each day for each Id.  The number of distinct logIds per SleepDay were stored as TotalSleepRecords. The result created a new table SleepDay_P2.
+
+(cleaning still in progress)
 
 <h2>Summary of Data Analysis</h2>
 
